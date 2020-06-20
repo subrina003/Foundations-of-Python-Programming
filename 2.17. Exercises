@@ -1,0 +1,55 @@
+#Evaluate the following numerical expressions in your head, then use the active code window to check your results:
+#5 ** 2
+#9 * 5
+#15 / 12
+#12 / 15
+#15 // 12
+#12 // 15
+#5 % 2
+#9 % 5
+#15 % 12
+#12 % 15
+#6 % 6
+#0 % 7
+
+print(5**2)
+print(9*5)
+print(15 / 12)
+print(12 / 15)
+print(15 // 12)
+print(12 // 15)
+print(5 % 2)
+print(9 % 5)
+print(15 % 12)
+print(12 % 15)
+print(6 % 6)
+print(0 % 7)
+
+#What is the order of the arithmetic operations in the following expression.
+#Evaluate the expression by hand and then check your work.
+print(2 + (3 - 1) * 10 / 5 * (2 + 3)) #parenthesis ,division, multiplication,addition, subtraction
+
+#Challenge: Many people keep time using a 24 hour clock (11 is 11am and 23 is 11pm, 0 is midnight).
+#If it is currently 13 and you set your alarm to go off in 50 hours, it will be 15 (3pm).
+#Write a Python program to solve the general version of the above problem.
+#Ask the user for the time now (in hours), and then ask for the number of hours to wait for the alarm.
+#Your program should output what the time will be on the clock when the alarm goes off.
+
+
+time_now=float(input("what is the time now?...say in hours: "))
+set_alarm=float(input("enter the number of hours to wait for the alarm: "))
+stop=(time_now+set_alarm)%24
+print("When the alarm will go off the time will be : "+str(stop))
+
+#It is possible to name the days 0 thru 6 where day 0 is Sunday and day 6 is Saturday. 
+#If you go on a wonderful holiday leaving on day number 3 (a Wednesday) and you return home after 10 nights you would return home on a Saturday (day 6).
+#Write a general version of the program which asks for the starting day number, and the length of your stay, and it will tell you the number of day of the week you will return on.
+
+
+start_day = int(input("from 0-6 what day is it? "))
+days_to_wait = int(input("how many days you will be gone? "))
+end_day = (start_day + days_to_wait) % 7
+print(end_day)
+
+
+
