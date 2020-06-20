@@ -1,0 +1,5 @@
+#Why create an algorithm?
+So that you have a general solution to a problem.
+
+#Write code to print out the phrase “Hello World”.
+print("Hello World")
